@@ -3,7 +3,7 @@ A calender export script written specifically for RMIT in Python.
 Takes RMIT credentials and fetches class data to be interpreted into an ICS file.
 Outputs to a file named calsXXXXXXX.ics (where XX... is the given student number)
 
-Usage: python rmitcal.py \<username> \<password>
+Usage: python ./rmitcal.py \<username> \<password>
 
 Test on Python 2.6.6 and runs on Python 3 AFAIK
 
