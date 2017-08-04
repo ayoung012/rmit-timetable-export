@@ -1,11 +1,11 @@
 # rmit-timetable-export
-A calender export script written specifically for RMIT in Python.
+A calender export script written in Python specifically for RMIT mytimetable.
 Takes RMIT credentials and fetches class data to be interpreted into an ICS file.
 Outputs to a file named calsXXXXXXX.ics (where XX... is the given student number)
 
 Usage: python ./rmitcal.py \<username> \<password>
 
-Test on Python 2.6.6 and runs on Python 3 AFAIK
+Tested and runs on Python 2.6.6 and Python 3
 
 Requires these two Python packages:
 Requests 2.12.3
