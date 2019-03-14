@@ -24,10 +24,15 @@ username = sys.argv[1]
 password = sys.argv[2]
 
 # Date information no longer needs to be updated every semester
+# But the URL relies on whether the year number is even or odd??!?!?
+currentYear = datetime.now().year
+if currentYear % 2 == 0:
+    timetableurl = 'https://mytimetable.rmit.edu.au/even/student'
+else:
+    timetableurl = 'https://mytimetable.rmit.edu.au/odd/student'
 
 # Important urls
 login = 'https://sso-cas.rmit.edu.au/rmitcas/login'
-timetableurl = 'https://mytimetable.rmit.edu.au/odd/student'
 
 requests.packages.urllib3.disable_warnings()
 
